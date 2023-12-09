@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand ZARA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="website icon" href="./이미지/로고/로고-블랙.png" type="png" />
+    <script
+      src="https://kit.fontawesome.com/2b700de2a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".menu").click(function () {
+          $(".nav").slideToggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container-small">
+        <a class="logo" href="index.html"
+          ><img src="./이미지/로고/내비게이션 로고.png"
+        /></a>
+
+        <button type="button" class="menu">
+          <span class="fa-solid fa-bars fa-2x" title="MENU"></span>
+        </button>
+      </div>
+
+      <ul class="nav">
+        <li><a href="./zara_Int.html">자라소개</a></li>
+        <li><a href="user-fitingroom.html">사용자 컨텐츠</a></li>
+        <li><a href="book-women.html">자라 스타일북</a></li>
+        <li><a href="apply-service.html">고객지원</a></li>
+      </ul>
+
+      <ul class="nav-icon">
+        <li>
+          <a href="#"><img src="./아이콘/로그인.svg" width="24px" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./아이콘/좋아요.svg" width="24px" /></a>
+        </li>
+        <li>
+          <a href="https://www.zara.com/kr/" target="_blank"
+            ><img src="./아이콘/쇼핑몰.svg" width="24px"
+          /></a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- -------------히어로 이미지---------------------- -->
+    <div class="hero-slider">
+      <img src="./이미지/로고/로고-화이트.png" class="hero-logo" />
+      <div class="slider-btn prev-btn" onclick="prevSlide()">
+        <img src="./아이콘/left.svg" alt="" />
+      </div>
+      <div class="hero-slider-inner">
+        <div class="hero-slide">
+          <img src="./이미지/메인페이지/히어로 이미지.jpg" alt="Slide 1" />
+        </div>
+        <div class="hero-slide">
+          <img src="./이미지/메인페이지/히어로 이미지2.jpg" alt="Slide 2" />
+        </div>
+        <div class="hero-slide">
+          <img src="./이미지/메인페이지/히어로-이미지3.jpg" alt="Slide 3" />
+        </div>
+      </div>
+      <div class="slider-btn next-btn" onclick="nextSlide()">
+        <img src="./아이콘/right.svg" alt="" />
+      </div>
+    </div>
+    <!-- ---------------------히어로 이미지 끝------------------------ -->
+
+    <!-- -------------------컨텐츠A---------------------- -->
+    <section class="conA">
+      <div class="conA-text">
+        <h1>ABOUT ZARA</h1>
+        <div class="line"></div>
+        <p>
+          ZARA는 환경 발자국을 줄이고 지구와 지구에 사는 사람들을 보호하는 데
+          도움이 되는<br />
+          가장 지속 가능한 모델로 나아가기 위해 일상적인 의사결정 과정에 지속
+          가능성을 통합하기 위해 노력하고 있습니다.<br />
+          이를 위해 환경 영향이 적은 원자재 사용, 공급망 혁신, 순환 프로젝트
+          발전, 생물 다양성 개선 기여 등 네 가지 우선순위를 설정했습니다.
+        </p>
+        <div class="img-container"></div>
+      </div>
+      <div class="conA-img">
+        <img src="./이미지/메인페이지/메인페이지 이미지1.png" alt="" />
+        <img src="./이미지/메인페이지/메인페이지 이미지2.png" alt="" />
+        <img src="./이미지/메인페이지/메인페이지 이미지3.png" alt="" />
+        <img src="./이미지/메인페이지/메인페이지 이미지4.png" alt="" />
+      </div>
+
+      <button class="line-but"><a href="zara_Int.html">자세히</a></button>
+    </section>
+    <!-- -----------------컨텐츠 A 끝------------------ -->
+
+    <div class="container">
+      <!-- --------------------컨텐츠 B 시작-------------------- -->
+      <section class="conB">
+        <div class="conB-text">
+          <h2>ZARA STYLE BOOK</h2>
+          <div class="line"></div>
+          <p>ZARA의 패션 트랜드를 살펴보세요.</p>
+          <button class="line-but"><a href="book-women.html">더보기</a></button>
+        </div>
+        <div class="conB-img">
+          <img src="./이미지/메인페이지/메인페이지 이미지5.jpg" alt="" />
+        </div>
+        <button id="hidden-but" class="line-but">
+          <a href="book-women.html">더보기</a>
+        </button>
+      </section>
+      <!-- --------------------컨텐츠 B 끝-------------------- -->
+      <div class="background-line"></div>
+      <!-- --------------------컨텐츠 C 시작-------------------- -->
+      <section class="conC">
+        <div class="conC-text">
+          <h2>NEW PROJECT</h2>
+          <div class="line"></div>
+          <p>
+            SUSTAINABILITY INNOVATION HUB는 ZARA 제품이 환경에 미치는 영향을
+            제한하고,<br />
+            더욱 지속 가능한 솔루션과 순환성을 위해 새로운 방법을 모색하는
+            새로운 기술, 소재 및 공정 사용을 지원하는<br />
+            플랫폼입니다. 이 플랫폼은 혁신적인 이니셔티브를 식별하고 테스트하여
+            공급망과 섬유업계에<br />
+            그 아이디어를 확장하는 것을 목표로 합니다.
+          </p>
+          <button class="line-but"><a href="activity.html">더보기</a></button>
+        </div>
+        <div class="conC-img">
+          <img src="./이미지/메인페이지/메인페이지 이미지6.jpg" alt="" />
+        </div>
+        <button id="hidden-but" class="line-but">
+          <a href="activity.html">더보기</a>
+        </button>
+      </section>
+      <!-- --------------------컨텐츠 C 끝-------------------- -->
+
+      <!-- --------------------컨텐츠 D 시작-------------------- -->
+      <section class="conD">
+        <h1>NEWS LETTER</h1>
+        <div class="news">
+          <a href="zara-news.html"
+            ><img src="./이미지/메인페이지/메인페이지 이미지7.jpg" alt=""
+          /></a>
+          <h2>
+            자라×해리 램버트<br />
+            협업 컬렉션 ‘큐티 카오스’
+          </h2>
+          <p>
+            자라(Zara)가 특별한 협업을 통해 새로운 컬렉션을 선보입니다. 엠마
+            코린, 해리 스타일스, 조시 오코너 등 핫한 셀러브리티의 스타일리스트
+            해리 램버 트(Harry Lambert)와 함께 선보이는 컬렉션입니다.
+          </p>
+        </div>
+
+        <div class="news">
+          <a href="zara-news.html"
+            ><img src="./이미지/메인페이지/메인페이지 이미지8.jpg" alt=""
+          /></a>
+          <h2>
+            2023년 자라<br />
+            블랙프라이데이 세일은 언제인가요?
+          </h2>
+          <p>
+            11월 23일 목요일 저녁에 브랜드 앱에서 세일이 조기에 중단될 것으로
+            예상할 수 있습니다. 11월 24일 금요일부터 Zara 매장에서 오프라인
+            판매도 진행됩니다.
+          </p>
+        </div>
+
+        <div class="news">
+          <a href="zara-news.html"
+            ><img src="./이미지/메인페이지/메인페이지 이미지9.png" alt=""
+          /></a>
+          <h2>
+            패스트패션 자라의 변신..<br />
+            ’자라도 프리미엄이 될 수 있다.
+          </h2>
+          <p>
+            패스트패션의 대명사 '자라'가 패스트패션을 넘어서고 있다. '한 철 입는
+            저가 패션'에서 '셀럽의 하객룩으로', '빨리 고르고 나가는 매장'에서
+            오래 머물고 싶은 매장'으로 말이다.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- -----------------------푸터------------------------------------ -->
+    <footer>
+      <div class="container">
+        <div class="footA">
+          <h2>ZARA</h2>
+          <p>
+            대표자 : ROMAY DE LA COLINA JOSE MANUEL<br />
+            서울시 강남구 영동대로 511 (삼성동, 트레이드타워 33층)<br />
+            대표번호: 080-479-0880
+          </p>
+
+          <nav class="footD">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="fa-brands fa-instagram" title="Instagram"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa-brands fa-facebook" title="facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-google-plus" title="Google Plus"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa-brands fa-pinterest" title="pinterest"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-youtube" title="YouTube"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav class="footB">
+          <div>
+            <h3>HELP</h3>
+            <ul>
+              <li><a href="#">내 ZARA 계정</a></li>
+              <li><a href="#">ZARA 경험</a></li>
+              <li><a href="#">배송</a></li>
+              <li><a href="#">교환, 반품 및 환불</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>회사</h3>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">JOIN LIFE</a></li>
+              <li><a href="#">사무소</a></li>
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>팔로우 하기</h3>
+            <ul>
+              <li><a href="#">뉴스레터</a></li>
+              <li><a href="#">YOUTUBE</a></li>
+              <li><a href="#">PINTEREST</a></li>
+              <li><a href="#">INSTAGRAM</a></li>
+              <li><a href="#">TWITTER</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>정책</h3>
+            <ul>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">쿠키 설정</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="copyright">© ZARA corp ALL RIGHTS RESERVED</div>
+    </footer>
+
+    <!-- -----------------------------히어로 슬라이더 JS------------------------------ -->
+    <script>
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        const sliderInner = document.querySelector(".hero-slider-inner");
+        const slideWidth = document.querySelector(".hero-slide").offsetWidth;
+        currentIndex = index;
+
+        sliderInner.style.transform = `translateX(-${
+          currentIndex * slideWidth
+        }px)`;
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + 3) % 3; // 3은 슬라이드 개수
+        showSlide(currentIndex);
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % 3; // 3은 슬라이드 개수
+        showSlide(currentIndex);
+      }
+    </script>
+  </body>
+</html>
