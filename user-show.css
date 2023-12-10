@@ -361,7 +361,7 @@ footer .container {
 }
 /* --------------푸터 끝--------------- */
 
-.container {
+.container-show {
   display: flex;
   width: 100vw;
   justify-content: center;
